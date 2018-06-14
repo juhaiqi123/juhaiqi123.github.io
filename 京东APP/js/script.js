@@ -1,8 +1,9 @@
 var ad=document.querySelector(".ad");
 var close=document.querySelector(".ad .left span");
+var search=document.querySelector(".search");
 if(ad !=null,close !=null){
     if(sessionStorage=="false"){
-    ad.style.display="none";
+        ad.style.display="none";
     }else{
         ad.style.display="block";
     }
@@ -11,6 +12,36 @@ if(ad !=null,close !=null){
         sessionStorage="false";
     }
 }
+
+//顶部搜索框鼠标滚动
+var search=document.querySelector(".search");
+console.log(search);
+if(search !=null){
+//    window.onscroll = function(){
+//        var juli=document.documentElement.scrollTop||document.body.scrollTop;
+//        console.log()
+//        if(juli<100){
+//                 search.style.background="";
+//                 search.style.top="0";
+//                 
+//            }else{
+//                 search.style.backgroundColor="palevioletred";
+//                 search.style.top="auto";
+//            }
+//    }
+    $(function(){
+        $(window).scroll(function(){
+            if($(window).scrollTop()>50){
+                search.style.background="palevioletred";
+                search.style.top="0";
+            }else{
+                search.style.background="";
+                search.style.top="auto";
+            }
+        })
+    })
+}
+    
 
 ///快报/
 var text=document.querySelectorAll(".news .center .text");
@@ -73,27 +104,8 @@ setInterval(function(){
             time();
         },1000);
 
-//顶部搜索框鼠标滚动
 
-//var search=document.querySelector(".search");
-//$(function(){
-//    $(window).scroll(function(){
-//        if($(window).scrollTop()>100){
-//            search.style.background="palevioletred";
-//        }else{
-//            search.style.background="";
-//        }
-//    })
-//})
-var search=document.querySelector(".search");
-    window.onscroll = function(){
-        var juli=document.documentElement.scrollTop||document.body.scrollTop;
-        if(juli<100){
-                 search.style.background="";
-            }else{
-                  search.style.backgroundColor="palevioletred";
-            }
-    }
+
 
 //轮播
 
@@ -151,15 +163,12 @@ new Vue({
     }
 })
 
-
-
-
-var a=document.querySelectorAll("#tuijian .shangpin .btn")
+var a=document.querySelectorAll(" #tuijian .shangpin .btn")
 if(a !=null){
     a[0].style.display="none";
     a[10].style.display="none";
 }
-var h4=document.querySelectorAll("#tuijian .shangpin h4");
+var h4=document.querySelectorAll(" #tuijian .shangpin h4");
 if(h4 !=null){
     h4[8].firstChild.style.backgroundColor="#b162a3";
     h4[13].firstChild.style.backgroundColor="#b162a3";
@@ -174,7 +183,7 @@ var tops=document.querySelector(".gotop");
             if(juli1<600){
                 tops.style.display="none";
             }else{
-                  tops.style.display="block";
+                tops.style.display="block";
             }
         };
     
@@ -190,60 +199,3 @@ var tops=document.querySelector(".gotop");
 
        };
     }
-
-
-
-new Vue({
-    el:"#list",
-    data:{    
-        list:[
-            {guanggao:"img/sort/guangao.jpg",
-                biaotis:[
-                    {h3:"热门分类",
-                    shangpins:[
-                        {img:"img/sort/tuijian/1.png",p:"电风扇"},{img:"img/sort/tuijian/2.png",p:"手机"},{img:"img/sort/tuijian/3.png",p:"空调"},{img:"img/sort/tuijian/4.png",p:"充电宝"},{img:"img/sort/tuijian/5.png",p:"蓝牙耳机"},{img:"img/sort/tuijian/6.png",p:"蚊帐"},{img:"img/sort/tuijian/7.png",p:"凉席"},{img:"img/sort/tuijian/8.png",p:"耳机"},{img:"img/sort/tuijian/9.jpg",p:"电饭煲"},{img:"img/sort/tuijian/10.png",p:"空调挂机"},{img:"img/sort/tuijian/11.png",p:"路由器"},{img:"img/sort/tuijian/12.png",p:"努空调扇"},
-                        {img:"img/sort/tuijian/13.png",p:"男鞋"},
-                        {img:"img/sort/tuijian/14.png",p:"热水器"},
-                        {img:"img/sort/tuijian/15.png",p:"防晒"},
-                    ]},
-                    {h3:"家电热搜",
-                    shangpins:[
-                        {img:"img/sort/tuijian/16.png",p:"冰箱"},{img:"img/sort/tuijian/17.png",p:"洗衣机"},{img:"img/sort/tuijian/18.png",p:"电视"},
-                    ]},
-                    {h3:"热卖手机",
-                     shangpins:[
-                        {img:"img/sort/tuijian/19.png",p:"华为手机"},
-                        {img:"img/sort/tuijian/20.png",p:"小米手机"},
-                        {img:"img/sort/tuijian/21.png",p:"苹果"},
-                     ]
-                    }
-                ]
-            },{guanggao:"img/sort/guangao1.jpg",
-               biaotis:[
-                    {
-                   
-               }]
-              
-            },{},{},{},{},{},{},{},{},{},{},{},{},{},{} ,{},{},{},{},{},{},{},{},{},{},{},{},{},{},{} ,{},{},{}          
-        ]
-    }
-})
-//京东分类选项卡
-var sortnav=document.querySelectorAll(".sort .main ul li");
-var sortlist=document.querySelectorAll(".sort .main .row .col-xs-9 .list");
-if(sortnav !=null,sortlist !=null){
-    sortlist[0].style.display="block";
-    for(var q=0;q<sortnav.length;q++){
-        sortnav[q].qq=q;
-        sortnav[q].onclick=function(){
-            for(var w=0;w<sortnav.length;w++){
-                sortnav[w].className="";
-                sortlist[w].style.display="none";
-            }
-            sortlist[this.qq].style.display="block";
-            sortnav[this.qq].className="active";
-            var n=this.qq;
-            $(".sort .main .row .col-xs-3").animate({scrollTop:40*n},500);
-        }   
-    }
-}

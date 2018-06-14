@@ -128,7 +128,6 @@ nav span{
     color: #fff;
     transition: 1s;
     position: fixed;
-    top: 0px;
     z-index: 20;
     left: 0px;
     width: 100%;
@@ -1040,6 +1039,7 @@ nav span{
 
 .sort .search{
     background-color: #fff;
+    top: 0px;
 }
 .sort .search input{
     background-color: #f7f7f7;
