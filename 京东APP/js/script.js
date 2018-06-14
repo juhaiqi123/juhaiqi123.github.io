@@ -62,7 +62,7 @@ setInterval(function(){
 //倒计时
     function time(){
             var span =document.querySelector("span");
-            var date1=new Date("2018-6-13 8:00:00");//目标时间
+            var date1=new Date("2018-6-18 8:00:00");//目标时间
             var date2=new Date();//当前时间
             var date1time=date1.getTime();//目标时间时间戳
             var date2time=date2.getTime();//当前时间时间戳
