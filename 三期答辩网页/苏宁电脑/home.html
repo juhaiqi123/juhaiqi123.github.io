@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电脑办公</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!--回到顶部-->
+<div class="gotop"></div>
+<!--弹框-->
+
+<div class="tankuang">
+   <div>
+       <span class="time"></span>
+       <span class="guanbi">关闭</span>
+   </div>
+    <img src="img/tankuang.png">
+</div>
+<!--底部导航-->
+<div class="bottomnav">
+    <nav>
+        <li><a href=""><img src="img/home/yijiuhuanxin.png"><span>以旧换新</span></a></li>
+        <li><a href=""><img src="img/home/fuwuba.png"><span>服务吧</span></a></li>
+        <li><a href=""><img src="img/home/jiaonimai.png"><span>教你买</span></a></li>
+        <li><a href=""><img src="img/home/lingjuanzhongxin.png"><span>领卷中心</span></a></li>
+    </nav>   
+</div>
+<!--header-->
+
+<header>
+    <div class="top">
+        <a href="home.html"><div class="left"></div></a>
+        <div class="center">电脑办公</div>
+        <div class="right"></div>
+        <div class="nav">
+            <div class="jiantou"></div>
+            <nav>
+                <li><a href="home.html"><i class="i1"></i><span>首页</span></a></li>
+                <li><a href="shop.html"><i class="i2"></i><span>购物车</span></a></li>
+                <li><a href=""><i class="i3"></i><span>搜索</span></a></li>
+                <li><a href="list.html"><i class="i4"></i><span>全部分类</span></a></li>
+                <li><a href="my.html"><i class="i5"></i><span>我的网易</span></a></li>
+            </nav>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="search">
+           <div class="left">
+                <a href="list.html">
+                    <img src="img/home/fenlei.png">
+                </a>   
+           </div>
+            <div class="right">
+                <a href="https://m.suning.com/search/iPad/&cn=35323033363635353037?utm_medium=360&utm_content=360&utm_content=&utm_campaign=title" class="searchinput">
+                    <img src="img/home/sousuo.png" class="ss">
+                    <input type="text" placeholder="iPad">
+                </a>
+            </div>  
+        </div>
+                
+    <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/home/lunbo1.webp"></div>
+                <div class="swiper-slide"><img src="img/home/lunbo2.webp"></div>
+                <div class="swiper-slide"><img src="img/home/lunbo3.webp"></div>
+                <div class="swiper-slide"><img src="img/home/lunbo4.webp"></div>
+                <div class="swiper-slide"><img src="img/home/lunbo5.webp"></div>
+            </div>
+    <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+      </div>       
+    </div> 
+</header>
+<div class="banner">
+    <div class="top" id="fenlei">
+        <div v-for="fl in fenleis">
+            <a href="">
+                <img :src="fl.img">
+                <p>{{fl.p}}</p>
+            </a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left">
+            <img src="img/home/xiaoxi.png">
+        </div>
+        <div class="right">
+            <div class="text">
+                <a href=""><p>30天包退、180天只换不修，电脑放心购。</p></a>
+            </div>
+            <div class="text">
+                <a href=""><p>华硕年终大促，千元神卷火热开抢。</p></a>
+            </div>         
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="left">
+            <h3>每日必惠</h3>
+            <p>DALY DISCOUNT</p>
+            <div class="line"></div>
+            <span>好货私人订制</span>
+        </div>
+        <div class="content"><a href=""><img src="img/home/meiri1.webp"></a></div>
+        <div class="right"><a href=""><img src="img/home/meiri2.webp"></a></div>  
+    </div>
+</div>
+<div class="biqiang">
+    <div class="title">
+        <img src="img/home/biqiang.jpg"> 
+    </div>
+    <div class="jishi">
+        <p>距离本场结束<span class="h"></span>时<span class="m"></span>分<span class="s"></span>秒</p>
+    </div>
+    <div class="shop">
+       <ul>
+            <li>
+                <a href="">
+                   <img src="img/home/biqiangpic1.webp">
+                   <p>【A10芯片】Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板电脑 MRJP2CH/A 金色</p>
+                   <span>￥3188.00</span>
+                   <del>￥3388.00</del>
+                   <div class="qiang">抢</div>
+                </a>
+            </li>
+            <li>
+               <a href="">
+                   <img src="img/home/biqiangpic2.webp">
+                   <p>联想（Lenovo）拯救者R720 15.6英寸发烧游戏本笔记本（I5-7300HQ 8G 128GB+1TB 黑金版）</p>
+                   <span>￥6099.00</span>
+                   <del>￥7299.00</del>
+                   <div class="qiang">抢</div>
+               </a>
+            </li>
+            <li>
+                <a href="">
+                   <img src="img/home/biqiangpic3.webp">
+                   <p>惠普HP光影精灵3代绿刃Pav15-cb073TX15.6英寸游戏本笔记本电脑(I5-7300HQ 128GB+1TB)</p>
+                   <span>￥5299.00</span>
+                   <del>￥5299.00</del>
+                   <div class="qiang">抢</div>
+                </a>
+            </li>
+            <li>
+               <a href="">
+                   <img src="img/home/biqiangpic4.webp">
+                   <p>惠普（HP）Pav x360 14-ba037TX 轻薄本14.0英寸笔记本（Intel i5-7200U 256GB</p>
+                   <span>￥3188.00</span>
+                   <del>￥3388.00</del>
+                   <div class="qiang">抢</div>
+               </a>
+            </li>
+            <li>
+               <a href="">
+                   <img src="img/home/biqiangpic5.webp">
+                   <p>小米（MI）路由器pro 2600M wifi信号放大 双频路由 大户型穿墙王 星空灰 智能路由器</p>
+                   <span>￥3188.00</span>
+                   <del>￥3388.00</del>
+                   <div class="qiang">抢</div>
+                </a>
+            </li>
+            <li>
+               <a href="">
+                   <img src="img/home/biqiangpic6.webp">
+                   <p>爱普生（EPSON）L380 墨仓式 打印机一体机 （打印 复印 扫描）</p>
+                   <span>￥999.00</span>
+                   <del>￥1199.00</del>
+                   <div class="qiang">抢</div>
+               </a>
+            </li>
+       </ul>
+    </div>
+</div>
+<div class="baokuan">
+    <div class="title">
+        <img src="img/home/baokuan.jpg">
+    </div>
+    <div class="row" id="shop">
+        <div class="col-xs-4" v-for="shop in shops">
+            <img :src="shop.img">
+            <p>{{shop.p}}</p>
+            <span>{{shop.span}}</span>
+            <del>{{shop.del}}</del>
+        </div>
+    </div>
+</div>
+<div class="guanggao">
+     <!-- Swiper -->
+    <div class="swiper-container1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/home/guanggao1.webp"></div>
+                <div class="swiper-slide"><img src="img/home/guanggao2.webp"></div>
+            </div>
+    <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+      </div> 
+</div>
+<div class="daren">
+    <div class="title"><a href=""><img src="img/home/darentuijian.jpg"></a></div>
+    <a href="">
+        <div class="row">
+            <div class="col-xs-8">
+                <h3>联想拯救者Y7000评测：三面窄边框的游戏神器</h3>
+                <p>如果说起18年游戏本的设计趋势，那么肯定少不了轻量化、窄边框、八代酷睿等相关的设计元素，但当前市场中兼具以上特点的产品却寥寥无几。在这样的背景下，联想拯救者作为玩家们耳熟能详的一线游戏品牌，率先推出了</p>
+                <span><i></i>苏宁电脑</span>
+            </div>
+            <div class="col-xs-4">
+                <img src="img/home/darentuijianpic1.webp">
+            </div>
+        </div>
+    </a>
+    <a href="">
+        <div class="row">
+            <div class="col-xs-8">
+                <h3>超窄边框超爽视野，全面屏游戏本</h3>
+                <p>2017年，手机开启全面屏时代，各家厂商把参数集中到了屏占比上！当然一些笔记本开始主打大屏占比，只不过绝大多数都是轻薄本。进入2018年后这种局面终于被打破了，笔记本中高性能代表——游戏本，也开始“全民全面屏”！现在就来给大家推荐几款全面屏游戏本！</p>
+                <span><i></i>苏宁电脑</span>
+            </div>
+            <div class="col-xs-4">
+                <img src="img/home/darentuijianpic2.webp">
+            </div>
+        </div>
+    </a>
+</div>
+<div class="xiaobian" id="xiaobian">
+    <div class="title"><img src="img/home/xiaobiantuijian.jpg"></div>
+    <div class="row">
+        <div class="col-xs-4"><span class="active">热销榜单</span></div>
+        <div class="col-xs-4"><span>新品专区</span></div>
+        <div class="col-xs-4"><span>好货推荐</span></div>
+    </div>
+    <div v-for="gds in goods" class="good">
+        <div v-for="gd in gds.good">
+            <a href="">
+                <img :src="gd.img">
+                <h4>{{gd.h4}}</h4>
+                <p>{{gd.p}}</p>
+                <span>{{gd.span}}</span>
+                <del>{{gd.del}}</del>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="dapai">
+    <div class="title">
+        <img src="img/home/jingxuandapai.jpg">
+    </div>
+   <div class="row">
+       <div class="col-xs-6">
+           <a href=""><img src="img/home/jingxuandapai1.webp"></a>
+       </div>
+       <div class="col-xs-6" id="col-xs-6">
+           <a href=""><img src="img/home/jingxuandapai2.webp"></a>
+           <div class="row">
+               <div class="col-xs-6" id="col-xs-6">
+                   <a href=""><img src="img/home/jingxuandapai3.webp"></a>
+               </div>
+               <div class="col-xs-6" id="col-xs-6">
+                   <a href=""><img src="img/home/jingxuandapai4.webp"></a>
+               </div>
+           </div>
+       </div>
+   </div>
+    <div class="row">
+        <div class="col-xs-3"><a href=""><img src="img/home/jingxuandapai5.png"></a></div>
+        <div class="col-xs-3"><a href=""><img src="img/home/jingxuandapai6.png"></a></div>
+        <div class="col-xs-3"><a href=""><img src="img/home/jingxuandapai7.png"></a></div>
+        <div class="col-xs-3"><a href=""><img src="img/home/jingxuandapai8.png"></a></div>
+        <div class="col-xs-3"><a href=""><img src="img/home/jingxuandapai9.png"></a></div>
+        <div class="col-xs-3"><a href=""><img src="img/home/jingxuandapai10.png"></a></div>
+        <div class="col-xs-3"><a href=""><img src="img/home/jingxuandapai11.png"></a></div>
+        <div class="col-xs-3"><a href=""><img src="img/home/jingxuandapai12.png"></a></div>
+    </div>
+</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/swiper-4.2.6.min.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

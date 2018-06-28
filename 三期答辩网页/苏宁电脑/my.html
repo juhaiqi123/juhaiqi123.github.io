@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="my">
+   <div class="gotop"></div>
+    <header>
+        <div class="top">
+            <a href="home.html"><div class="left"></div></a>
+            <div class="center">登录</div>
+            <div class="right"></div>
+            <div class="nav">
+                <div class="jiantou"></div>
+                <nav>
+                    <li><a href="home.html"><i class="i1"></i><span>首页</span></a></li>
+                    <li><a href="shop.html"><i class="i2"></i><span>购物车</span></a></li>
+                    <li><a href=""><i class="i3"></i><span>搜索</span></a></li>
+                    <li><a href="list.html"><i class="i4"></i><span>全部分类</span></a></li>
+                    <li><a href="my.html"><i class="i5"></i><span>我的网易</span></a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="top">
+            <ul>
+                <li><span class="active">快速登录</span></li>
+                <li><span>账号密码登录</span></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div  class="kuaijie" id="denglu">
+               <div>
+                    <span>手机号</span>
+                    <input type="text" placeholder="请输入手机号" class="input1">
+                    <i class="i2"></i>
+               </div>
+               <div>
+                    <span>手机验证码</span>
+                    <input type="text" placeholder="请输入手机验证码" class="input2">
+                    <a href="">获取验证码</a>
+               </div>
+            </div>
+            <div class="zhangmi" id="denglu">
+                <div>
+                    <span>账号</span>
+                    <input type="text" placeholder="手机号/邮箱/用户名/门店会员卡" class="input1">
+                    <i class="i2"></i>
+                </div>
+                <div>
+                    <span>密码</span>
+                    <input type="text" placeholder="请输入6-20位易购密码" class="input1">
+                    <i class="i1"></i>
+                    <i class="i2"></i>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <a href="#" class="denglu">登录</a>
+            <div class="qita">
+                <a href="">门卡登录</a>
+                <a href="">忘记密码？</a>
+            </div>
+            <a href="" class="zhuce">快速注册</a>
+        </div>
+    </div>
+    <div class="other">
+        <div class="top">
+            <div class="line"></div>
+            <div>其他登录方式</div>
+            <div class="line"></div>
+        </div>
+        <ul class="bottom">
+            <li>
+                <a href="">
+                    <img src="img/my/qq.png">
+                    <span>QQ</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/my/wangyi.png">
+                    <span>易付宝</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="tuijian">
+        <div class="title"><img src="img/shop/jingpintuijian.webp"></div>
+        <div v-for="tj in tuijians" class="tuijians">
+            <a href="">
+                <img :src="tj.img">
+                <p>{{tj.p}}</p>
+                <span>{{tj.span}}</span>
+                <del>{{tj.del}}</del>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/swiper-4.2.6.min.js"></script>
+<script src="js/my.js"></script>
+</html>

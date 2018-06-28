@@ -1,0 +1,901 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+/*回到顶部*/
+.gotop{
+    background:url(../img/dingbu.png) center no-repeat #5B6167;
+    background-size: 16px 26px;
+    position: fixed;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    bottom: 60px;
+    right: 20px;
+    z-index: 10;
+    cursor: pointer;
+}
+.gotop img{
+    width: 100%;
+}
+/*弹框样式*/
+.tankuang{
+    width: 80%;
+   position: fixed;
+    text-align: center;
+    z-index: 20;
+    left: 10%;
+    bottom: 20%;
+}
+.tankuang div{
+    float: right;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background: #000;
+}
+.tankuang div .time{
+    color: orange;
+}
+.tankuang img{
+    width: 100%;
+}
+/*header样式*/
+.bottomnav{
+    position: fixed;
+    bottom: 0px;
+    background: #fff;
+    z-index: 10;
+    width: 100%;
+}
+.bottomnav nav li{
+    float: left;
+    text-align: center;
+    width: 25%;
+}
+.bottomnav nav li img{
+    width: 25%;
+}
+.bottomnav nav li span{
+    display: block;
+    font-size: 12px;
+    padding-top: 5px;
+    color: #222530;
+}
+.buttombav nav::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+header .top{
+    background: #fff;
+    border-bottom: 1px solid #DCDCDC;
+}
+header .top .left{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    background-image: url(../img/fanhui.png);
+    height: 30px;
+    width: 12px;
+    background-size: cover;
+    cursor: pointer;
+}
+header .top .center{
+    font-size: 16px;
+    width: 50%;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    color: #333;
+    margin: 0 auto;
+}
+header .top .right{
+    background-image:url(../img/dian.png);
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    background-size: cover;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+header .top .jiantou{
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: transparent transparent #484F55 transparent;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 36px;
+    right: 20px;
+}
+header .top nav{
+    position: absolute;
+    margin-top: 10px;
+    right: 10px;
+    border-radius: 2px;
+    width: 134px;
+    z-index: 20;
+}
+header .top nav li{
+    border-bottom: 1px #7d7d7d solid;
+    background: #484F55;
+}
+header .top nav li a{
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    display: block;
+}
+header .top nav li a span{
+    position: absolute;
+    top: 13px;
+    left: 46px;
+}
+header .top nav li a  i{
+    display:inline-block;
+    width: 26px;
+    height: 26px;
+    margin: 10px 0px 0px 10px;
+    background-size: cover;
+}
+header .top nav li a .i1{
+    background-image: url(../img/shouye.png); 
+}
+header .top nav li a .i2{
+    background-image: url(../img/gouwuche.png);
+}
+header .top nav li a .i3{
+    background-image: url(../img/sousuo.png);
+}
+header .top nav li a .i4{
+    background-image: url(../img/quanbufenlei.png);
+}
+header .top nav li a .i5{
+    background-image: url(../img/wodewangyi.png);
+}
+
+/*lunbo*/
+.swiper-container img{
+    width: 100%;
+}
+header .bottom{
+    position: relative;
+}
+header .bottom .search{
+    position: absolute;
+    width: 100%;
+    top: 8px;
+    z-index: 10;
+    padding-left: 15px;
+}
+header .bottom .search img{
+    width: 20px;
+    height: 30px;
+}
+
+header .bottom .search::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+header .bottom .search div{
+    float: left;
+}
+header .bottom .search a{
+    display: inline;
+}
+header .bottom .search .left{
+    width: 15%;
+}
+header .bottom .search .right{
+    position: relative;
+    width: 85%;
+}
+header .bottom .search .ss{
+    position: absolute;
+    left: 8px;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+}
+header .bottom .search input{
+    border-radius: 30px;
+    padding-left: 35px;
+    height: 30px;
+    width: 80%;
+    border: none;
+    background-color: rgba(247, 247, 247, 0.5);
+    
+}
+
+
+/*banner样式*/
+.banner .top{
+    padding-top: 10px;
+}
+.banner .top::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.banner .top div{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.banner .top div a img{
+    width: 60%;
+}
+.banner .top div a p{
+    padding-top: 5px;
+    color: #222530;
+}
+.banner .content::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.banner .content div{
+    float: left;
+}
+.banner .content .left{
+    padding-left: 10px;
+    width: 15%;
+}
+.banner .content .left img{
+    width:65%;
+}
+.banner .content .right{
+    width: 85%;
+    height: 30px;
+    overflow: hidden;
+}
+.banner .content .right a{
+    color: #222530;
+}
+.banner .content .right p{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.banner .bottom::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.banner .bottom {
+    padding: 10px;
+}
+.banner .bottom div{
+    float: left;
+}
+.banner .bottom .left{
+    width: 40%;
+}
+.banner .bottom .left h3{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.banner .bottom .left p{
+    color: #ccc;
+    margin-bottom: 0px;
+}
+.banner .bottom .left .line{
+    background: #fa4a37;
+    width: 40px;
+    height: 3px;
+}
+.banner .bottom .left span{
+    color: #999;
+    margin-top: 3px;
+    display: block;
+}
+.banner .bottom .content,.banner .bottom .right{
+    width: 30%;
+    text-align: center;
+}
+.banner .bottom .content img,.banner .bottom .right img{
+    width: 90%;
+}
+
+/*今日必抢*/
+.biqiang .title img{
+    width: 100%;
+}
+.biqiang .jishi{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.biqiang .jishi span{
+    background: #000;
+    color: #fff;
+    margin: 0px 3px;
+    padding: 2px;
+    border-radius: 3px;
+}
+.biqiang .shop{
+    width: 100%;
+    overflow: scroll;
+}
+.biqiang .shop::-webkit-scrollbar{
+    display: none;
+}
+.biqiang .shop ul::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.biqiang .shop ul{
+    width: 240%;
+}
+.biqiang .shop ul li{
+    float: left;
+    text-align: center;
+    width: 16%;
+    position: relative;
+}
+.biqiang .shop ul li img{
+    width: 90%;
+}
+.biqiang .shop ul li p{
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2; 
+    color: #222530;
+    padding-left: 10px;
+    margin-bottom: 0px
+}
+.biqiang .shop ul li span{
+    color: #ff4400;
+    text-align: left;
+    display: block;
+    padding-left: 10px;
+}
+.biqiang .shop ul li del{
+    color: #666;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 12px;
+    display: block;
+}
+.biqiang .shop ul li .qiang{
+    color: #fff;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background:#4497f4;
+    padding: 0px 3px;
+}
+
+/*今日爆款*/
+.baokuan{
+    background: #f2f2f2;
+    padding-bottom: 10px;
+}
+.baokuan .title img{
+    width: 100%;
+}
+.baokuan #shop .col-xs-4{
+    background:#fff;
+    width: 32.6666%;
+    margin-top: 3px;
+}
+.baokuan #shop .col-xs-4:nth-of-type(2),.baokuan #shop .col-xs-4:nth-of-type(5),.baokuan #shop .col-xs-4:nth-of-type(8){
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.baokuan #shop .col-xs-4 img{
+    width: 90%;
+}
+.baokuan .row{
+    margin: 0px;
+}
+.baokuan #shop .col-xs-4{
+    padding: 0px;
+    text-align: center;
+}
+.baokuan #shop .col-xs-4 p{
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2; 
+    color: #222530;
+    padding-left: 10px;
+    margin-bottom: 0px
+}
+.baokuan #shop .col-xs-4 span{
+    color: #ff4400;
+    text-align: left;
+    display: block;
+    padding-left: 10px;
+}
+.baokuan #shop .col-xs-4 del{
+    color: #666;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 12px;
+    display: block;
+}
+
+/*广告轮播*/
+.guanggao{
+    width: 100%;
+    overflow: hidden;
+}
+.swiper-container1 img{
+    width: 100%;
+}
+.swiper-container1{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.guanggao .swiper-container-horizontal>.swiper-pagination-bullets,.guanggao .swiper-pagination-custom, .guanggao  .swiper-pagination-fraction {
+    bottom: 1px;
+    left: 174px;
+    width: 100%;
+}
+/*达人推荐*/
+.daren .title img{
+    width: 100%;
+}
+.daren .row {
+    margin: 0px;
+    border-bottom: 1px #f2f2f2 solid;
+}
+.daren .row .col-xs-8,.daren .row .col-xs-4{
+    padding: 0px;
+}
+.daren .row .col-xs-8 h3{
+    color: #222530;
+    font-size: 18px;
+    margin: 10px 0px 0px 10px;
+}
+.daren .row .col-xs-8 p{
+    margin-left: 10px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap; 
+    color: #666;
+    margin-bottom: 0px;
+}
+.daren .row .col-xs-8 span{
+    margin-left: 10px;
+    color: #999;
+}
+.daren .row .col-xs-8 span i{
+    display: inline-block;
+    margin:0px 5px 2px 0px;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background: #999
+}
+.daren .row .col-xs-4{
+    text-align: center;
+}
+.daren .row .col-xs-4 img{
+    width: 90%;
+    margin: 10px 0px;
+}
+
+/*小编推荐*/
+.xiaobian{
+    background: #f2f2f2;
+}
+.xiaobian .title img{
+    width: 100%;
+}
+
+.xiaobian .row{
+    margin: 0px;
+}
+.xiaobian .row .col-xs-4{
+    padding: 0px;
+    background: #fff;
+    height: 40px;
+    text-align: center;
+}
+.xiaobian .row .col-xs-4 span{
+    display:inline-block;
+    line-height: 40px;
+    cursor: pointer;
+
+}
+.xiaobian .row .col-xs-4 span.active{
+    color: #4497f4;
+    font-size: 16px;
+    border-bottom: 1px solid #4497f4;
+}
+.xiaobian .good::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+.xiaobian .good{
+    display: none;
+}
+.xiaobian .good div{
+    width: 49.5%;
+    background-color: #fff;
+    float: left;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.xiaobian .good div:nth-of-type(2n){
+    margin-left: 1%;
+}
+.xiaobian .good div img{
+    width: 90%;
+}
+.xiaobian .good div h4{
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2; 
+    color: #222530;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+.xiaobian .good div p{
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+    color: #999;
+}
+.xiaobian .good div span{
+    color: #ff4400;
+}
+.xiaobian .good div del{
+    color: #454454;
+    font-size: 12px;
+}
+
+
+/*精选大牌*/
+.dapai{
+    margin-bottom: 48px;
+}
+.dapai .title img{
+    width: 100%;
+}
+.dapai .row{
+    margin: 0px;
+}
+.dapai .row .col-xs-6 .row #col-xs-6{
+    margin-left: 0.5%;
+    width: 49.5%
+}
+.dapai .row .col-xs-6 .row #col-xs-6:nth-of-type(1),.dapai .row .col-xs-6 .row #col-xs-6:nth-of-type(2){
+    margin-top: 2px;
+}
+.dapai .row .col-xs-6 img{
+    width: 100%;
+}
+.dapai .row .col-xs-3,.dapai .row .col-xs-6{
+    padding: 0px;
+    text-align: center;
+}
+.dapai .row .col-xs-3 img{
+    width: 90%;
+}
+
+
+
+/*list分类页面样式*/
+
+
+.list{
+    background: #f2f2f2;
+}
+.list .main #list div h3{
+    font-size: 18px;
+    margin: 10px 0px;
+    border-left: #353d44 3px solid;
+    margin-left: 10px;
+    padding-left: 10px
+}
+.list .main #list .fl::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+.list .main #list .fl .divs{
+    width: 25%;
+    text-align: center;
+    background:#fff;
+    padding: 5px 0px;
+    float: left;
+}
+.list .main #list .divs img{
+    width: 50%;
+}
+.list .main #list .divs span{
+    display: block;
+    font-size: 14px;
+    color: #7b7f82
+}
+.list .tuijian{
+    margin-bottom: 0px;
+}
+
+/*购物车shopcar样式*/
+.shopcar{
+    background: #f2f2f2;
+}
+.shopcar .banner{
+    background: #fff0c9;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0px;
+}
+.shopcar .banner a{
+    background: #ff6600;
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+}
+.title img{
+    width: 100%;
+}
+.tuijian::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+.tuijian{
+    background: #f2f2f2;
+    margin-bottom: 56px;
+}
+.tuijian .tuijians{
+    width: 49.5%;
+    background: #fff;
+    float: left;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.tuijian .tuijians:nth-of-type(2n+1){
+    margin-left: 1%;
+}
+.tuijian .tuijians img{
+    width: 90%;
+}
+.tuijian .tuijians p{
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2; 
+    color: #222530;
+    height: 44px;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.tuijian .tuijians span{
+    color: #ff4400;
+}
+.tuijian .tuijians del{
+    color: #454454;
+    font-size: 12px;
+}
+.shopcar .daohang{
+     width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background: #fff;
+}
+.shopcar .daohang nav::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+.shopcar .daohang nav li{
+    width: 20%;
+    text-align: center;
+    float: left;
+}
+.shopcar .daohang nav li img{
+    padding: 10px 0px;
+    width: 45%;
+}
+.shopcar .daohang nav li span{
+    display: block;
+}
+
+
+
+/*我的my样式*/
+.my{
+    background:#fff; 
+}
+.my .main .top ul::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+.my .main .top ul{
+    border-bottom: 1px solid #DCDCDC;
+}
+.my .main .top ul li{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.my .main .top ul li span.active{
+    border-bottom: 3px solid #f60;
+    color: #222530;
+}
+.my .main .top ul li span{
+    font-size: 16px;
+    color: #999;
+    padding: 10px 0px;
+    display: inline-block;
+}
+.my .main .container{
+    margin-top: 30px;
+}
+.my .main .container .kuaijie span{
+    font-size: 14px;
+    display: inline-block;
+    width: 30%;
+}
+.my .main .container a{
+    color: #222530;
+    display: inline;
+    width: 30%;
+}
+.my .main .container #denglu{
+    display: none;
+}
+.my .main .container #denglu div{
+    height: 50px;
+    border-bottom: 1px solid #DCDCDC;
+    line-height: 50px;
+    position: relative;
+}
+.my .main .container #denglu div i{
+    background-image: url(../img/my/cuo.png);
+    display: block;
+    position: absolute;
+    right: 26px;
+    top: 18px;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    display: none;
+}
+.my .main .container #denglu div .i1{
+    background-image: url(../img/my/yanjing.png);
+    position: absolute;
+    display: block;
+    right: 2px;
+    top: 10px;
+    background-size: cover;
+    width: 20px;
+    height: 22px;
+/*    display: none;*/
+}
+.my .main .container input{
+    height: 48px;
+    color: #222530;
+    border: none;
+    outline:none
+}
+.my .main .container .kuaijie .input1{
+    width: 60%;
+}
+.my .main .container .kuaijie .input2{
+     width: 40%;
+}
+.my .main .container .zhangmi span{
+    font-size: 14px;
+    display: inline-block;
+    width: 20%;
+}
+.my .main .container .zhangmi input{
+    width: 70%;
+}
+.my .main .bottom{
+    text-align: center;
+    margin-top: 30px;
+}
+.my .main .bottom .denglu{
+    background: #f60;
+    color: #fff;
+    width: 94%;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 5px;
+    display:inline-block;
+}
+.my .main .bottom .qita{
+    padding: 15px; 
+}
+.my .main .bottom .qita::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+.my .main .bottom .qita a:nth-of-type(1){
+    float: left;
+    color: #f60;
+}
+.my .main .bottom .qita a:nth-of-type(2){
+    float: right;
+    color: #222530;
+}
+.my .main .bottom .zhuce{
+    border: 1px solid #f60;
+    color: #f60;
+    font-size: 16px;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 20px;
+}
+.my .other{
+    padding: 0px 15px;
+    margin-top: 50px;
+}
+.my .other .top{
+     text-align: center;
+}
+.my .other .top::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.my .other .top div{
+    display: inline-block;
+}
+.my .other .top .line{
+    margin: 0px 5px 4px 0px;
+    height: 1px;
+    width: 32%;
+    display: inline-block;
+    background: #ddd
+}
+.my .other ul::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+.my .other ul{
+    text-align: center;
+    margin-top: 20px;
+}
+.my .other ul li img{
+    width: 45%;
+}
+.my .other ul li{
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+}
+.my .other ul li span{
+    display: block;
+}
+.my .tuijian{
+    margin-bottom: 0px;
+}

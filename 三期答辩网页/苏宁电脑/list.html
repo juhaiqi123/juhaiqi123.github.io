@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电脑分类</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="list">
+   <div class="gotop"></div>
+    <header>
+        <div class="top">
+            <a href="home.html"><div class="left"></div></a>
+            <div class="center">电脑分类</div>
+            <div class="right"></div>
+            <div class="nav">
+                <div class="jiantou"></div>
+                <nav>
+                    <li><a href="home.html"><i class="i1"></i><span>首页</span></a></li>
+                    <li><a href="shop.html"><i class="i2"></i><span>购物车</span></a></li>
+                    <li><a href=""><i class="i3"></i><span>搜索</span></a></li>
+                    <li><a href="list.html"><i class="i4"></i><span>全部分类</span></a></li>
+                    <li><a href="my.html"><i class="i5"></i><span>我的网易</span></a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div id="list">
+            <div v-for="lt in lists">
+                <h3>{{lt.h3}}</h3>
+                <div class="fl">
+                   <div class="divs" v-for="div in lt.divs">
+                       <a href="">
+                           <img :src="div.img" alt="">
+                            <span>{{div.span}}</span> 
+                       </a>   
+                   </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="tuijian">
+        <div class="title"><img src="img/shop/jingpintuijian.webp"></div>
+        <div v-for="tj in tuijians" class="tuijians">
+            <a href="">
+                <img :src="tj.img">
+                <p>{{tj.p}}</p>
+                <span>{{tj.span}}</span>
+                <del>{{tj.del}}</del>
+            </a>
+        </div>
+    </div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/swiper-4.2.6.min.js"></script>
+<script src="js/list.js"></script>
+</body>
+</html>
